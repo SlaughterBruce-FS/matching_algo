@@ -11,7 +11,13 @@ import SwiftUI
 struct matchingApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            let users: [User] = [
+                            .MOCK_USER,
+                            .MOCK_USER_1,
+                            .MOCK_USER_2,
+                            .MOCK_USER_3
+                        ]
+                        ContentView(users: users)
         }
     }
 }
